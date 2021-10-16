@@ -1,10 +1,54 @@
+*{
+  font-size: x-large;
+  margin: 0px ;
+  padding: 0px ;
+}
+.heading{
+margin-top: 8%;
+}
 .App {
   text-align: center;
+  
 }
+.moneytag{
+  
+ background:  linear-gradient( 0deg,rgba(104, 113, 120, 1) 0%,rgba(83, 90, 95, 1) 100% );
+ color: white;
 
+}
+.box1{
+ display: inline;
+ margin-right: 5%;
+}
+.box2{
+margin-bottom: 0%;
+display: inline;
+margin-left: 5%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+@media only screen and (max-width: 600px) {
+  .heading{
+    margin-top: 40%;
+    }
+    .moneytag {
+      font-size: medium !important;  
+      padding-bottom: 0%;
+    }
+
+    .box1{
+      display: block;
+      margin-top: 2%;
+      }
+     .box2{
+     display: block;
+     margin-bottom: 0%;
+     padding-bottom:0% ;
+     }
+
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +79,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+#ambaniImage{
+  width: 200px;
+  height: 200px;
 }
