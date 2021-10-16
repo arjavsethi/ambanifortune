@@ -1,11 +1,11 @@
 import React from 'react'
 import Receiptitem from './Receiptitem'
 import TotalContext from "../context/totalContext";
-import { useContext} from "react"
+// import { useContext} from "react"
 
 const Receipt = () => {
    
-    const context = useContext(TotalContext)
+    const context = React.useContext(TotalContext)
     const{receitArray,total,formater,printSection}=context;
     const receitTotal  =  formater(101800000000-total.wealth);
 

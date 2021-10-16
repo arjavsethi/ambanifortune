@@ -1,12 +1,12 @@
 import React from 'react'
 import Product from './Product'
 import TotalContext from '../context/totalContext'
-import { useContext } from 'react'
+// import { useContext } from 'react'
 const ProductList = () => {
 
     
    //importing data from context api 
-    const context = useContext(TotalContext)
+    const context = React.useContext(TotalContext)
     const {productsarray}=context;
 
     return (

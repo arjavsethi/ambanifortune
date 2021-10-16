@@ -1,9 +1,9 @@
 import React from 'react'
 import TotalContext from '../context/totalContext';
-import { useContext } from 'react';
+// import { useContext } from 'react';
 const Receiptitem = (props) => {
     const { name,price,count}= props;
-    const context = useContext(TotalContext)
+    const context = React.useContext(TotalContext)
     const {formater}=context;
     return (
        

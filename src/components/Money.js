@@ -1,9 +1,9 @@
 import React from 'react'
 import totalContext from '../context/totalContext'
-import { useContext } from 'react';
+// import { useContext } from 'react';
 const Money = (props) => {
 
-    const  context = useContext(totalContext);
+    const  context = React.useContext(totalContext);
 const {total,formater,perMoneyUsed}=context;
 const a = perMoneyUsed()
 

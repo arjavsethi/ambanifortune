@@ -1,10 +1,10 @@
 import React from "react";
 import TotalContext from "../context/totalContext";
-import { useContext,useState } from "react";
+// import { useContext,useState } from "react";
 
 
 const Product = (props) => {
-  const context = useContext(TotalContext)
+  const context = React.useContext(TotalContext)
   const{total,settotal, perMoneyUsed,receitCountIncUpdater,receitCountDncUpdater,formater}=context;
   
   const {name,price,url }=props;
@@ -12,7 +12,7 @@ const Product = (props) => {
  
 //count functionality
 const initialcount=0
-const [count, setcount] = useState(initialcount)
+const [count, setcount] = React.useState(initialcount)
 
 //onBuy
 const onBuy=(price)=>{
