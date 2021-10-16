@@ -1,12 +1,12 @@
 import TotalContext from "./totalContext";
-import { useState } from "react";
+import React from "react";
 const TotalState = (props) => {
   const initialtotal = {
     wealth: 101800000000,
     bill: 0,
   };
 
-  const [total, settotal] = useState(initialtotal);
+  const [total, settotal] = React.useState(initialtotal);
 
   const productsarray = [
     {
@@ -282,7 +282,7 @@ const TotalState = (props) => {
     },
   ];
 
-const [receitArray] = useState(initialreceitArray);
+const [receitArray] = React.useState(initialreceitArray);
   const receitCountIncUpdater = (name) => {
     for (let i = 0; i < receitArray.length; i++) {
       const element = receitArray[i];
